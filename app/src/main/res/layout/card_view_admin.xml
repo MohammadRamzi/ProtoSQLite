@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:layout_marginTop="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10sp">
+
+            <TextView
+                android:id="@+id/listChoreName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@id/imageViewID"
+                android:paddingBottom="5sp"
+                android:text="Chore Name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/assignedByID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/listChoreName"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@id/imageViewID"
+                android:text="Assigned By :" />
+            <TextView
+                android:id="@+id/assignedTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/assignedByID"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@id/imageViewID"
+                android:text="Assigned To :" />
+
+            <TextView
+                android:id="@+id/assignedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/imageViewID"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginEnd="5sp"
+                android:layout_marginBottom="5sp"
+                android:text="20 April 2019" />
+
+            <ImageView
+                android:id="@+id/imageViewID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/image_description"
+                app:srcCompat="@android:drawable/sym_def_app_icon"
+                tools:srcCompat="@android:drawable/sym_def_app_icon" />
+
+            <Button
+                android:id="@+id/listEditButton"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_alignBottom="@id/listChoreName"
+                android:layout_alignParentEnd="true"
+                android:background="@android:drawable/ic_menu_edit" />
+
+            <Button
+                android:id="@+id/listDeleteButton"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_alignBottom="@id/listChoreName"
+                android:layout_marginEnd="10sp"
+                android:layout_toStartOf="@id/listEditButton"
+                android:background="@android:drawable/ic_menu_delete" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

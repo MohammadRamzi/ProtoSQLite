@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PorotoSQLite</string>
+    <string name="title_activity_chore_list">ChoreListActivity</string>
+    <string name="image_description">Icon Of Chore</string>
+</resources>

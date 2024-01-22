@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.LoginActivity">
+
+    <EditText
+        android:id="@+id/usernameID"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="text"
+        android:padding="10sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        android:padding="10sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameID" />
+
+    <Button
+        android:id="@+id/loginID"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="#3F51B5"
+        android:padding="10sp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordID" />
+
+    <Button
+        android:id="@+id/forgetPasswordID"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="#777777"
+        android:padding="10sp"
+        android:text="Forget Password"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginID" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
